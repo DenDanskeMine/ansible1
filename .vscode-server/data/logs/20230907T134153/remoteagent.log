@@ -1,0 +1,43 @@
+2023-09-07 13:41:53.603 [info] 
+
+
+
+
+2023-09-07 13:41:53.603 [info] Extension host agent started.
+2023-09-07 13:41:53.627 [info] Started initializing default profile extensions in extensions installation folder. file:///etc/ansible/.vscode-server/extensions
+2023-09-07 13:41:53.691 [info] [127.0.0.1][f6fccc18][ManagementConnection] New connection established.
+2023-09-07 13:41:53.698 [info] [127.0.0.1][ed55ad7a][ExtensionHostConnection] New connection established.
+2023-09-07 13:41:54.302 [info] Completed initializing default profile extensions in extensions installation folder. file:///etc/ansible/.vscode-server/extensions
+2023-09-07 13:41:54.462 [info] [127.0.0.1][ed55ad7a][ExtensionHostConnection] <2962> Launched Extension Host Process.
+2023-09-07 13:42:31.910 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-09-07 13:42:31.910 [info] Cancelling previous shutdown timeout
+2023-09-07 13:42:32.085 [info] [127.0.0.1][85bad168][ManagementConnection] New connection established.
+2023-09-07 13:42:32.139 [info] Getting Manifest... humy2833.ftp-simple
+2023-09-07 13:42:32.166 [info] [127.0.0.1][f6121ddf][ExtensionHostConnection] New connection established.
+2023-09-07 13:42:32.178 [info] [127.0.0.1][f6121ddf][ExtensionHostConnection] <3151> Launched Extension Host Process.
+2023-09-07 13:42:32.811 [info] Installing extension: humy2833.ftp-simple
+2023-09-07 13:42:45.738 [info] [127.0.0.1][85bad168][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-09-07 13:42:45.747 [error] Error: Throttler is disposed
+    at r.queue (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:70:13612)
+    at /etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:70:15183
+    at /etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:70:14822
+    at runNextTicks (node:internal/process/task_queues:61:5)
+    at listOnTimeout (node:internal/timers:528:9)
+    at processTimers (node:internal/timers:502:7)
+2023-09-07 13:42:45.763 [info] [127.0.0.1][f6121ddf][ExtensionHostConnection] <3151> Extension Host Process exited with code: 0, signal: null.
+2023-09-07 13:42:45.764 [info] Cancelling previous shutdown timeout
+2023-09-07 13:42:47.360 [warning] Extension signature verification failed with error 'ENOENT': humy2833.ftp-simple
+2023-09-07 13:42:48.623 [info] Extracted extension to file:///etc/ansible/.vscode-server/extensions/humy2833.ftp-simple-0.7.6: humy2833.ftp-simple
+2023-09-07 13:42:48.643 [info] Renamed to /etc/ansible/.vscode-server/extensions/humy2833.ftp-simple-0.7.6
+2023-09-07 13:42:48.645 [info] Extracting extension completed. humy2833.ftp-simple
+2023-09-07 13:42:48.656 [info] Extension installed successfully: humy2833.ftp-simple
+2023-09-07 13:42:52.134 [info] [127.0.0.1][70552e72][ManagementConnection] New connection established.
+2023-09-07 13:42:52.199 [info] [127.0.0.1][7dc24afb][ExtensionHostConnection] New connection established.
+2023-09-07 13:42:52.206 [info] [127.0.0.1][7dc24afb][ExtensionHostConnection] <3322> Launched Extension Host Process.
+2023-09-07 13:47:32.356 [info] Getting Manifest... geowerkstatt.interlislanguagesupport
+2023-09-07 13:47:32.532 [info] Installing extension: geowerkstatt.interlislanguagesupport
+2023-09-07 13:47:34.547 [warning] Extension signature verification failed with error 'ENOENT': geowerkstatt.interlislanguagesupport
+2023-09-07 13:47:34.644 [info] Extracted extension to file:///etc/ansible/.vscode-server/extensions/geowerkstatt.interlislanguagesupport-0.1.6: geowerkstatt.interlislanguagesupport
+2023-09-07 13:47:34.656 [info] Renamed to /etc/ansible/.vscode-server/extensions/geowerkstatt.interlislanguagesupport-0.1.6
+2023-09-07 13:47:34.659 [info] Extracting extension completed. geowerkstatt.interlislanguagesupport
+2023-09-07 13:47:34.670 [info] Extension installed successfully: geowerkstatt.interlislanguagesupport

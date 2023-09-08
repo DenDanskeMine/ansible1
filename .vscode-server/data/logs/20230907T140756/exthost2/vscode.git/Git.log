@@ -1,0 +1,91 @@
+2023-09-07 14:58:49.537 [info] Log level: Info
+2023-09-07 14:58:49.537 [info] Validating found git in: "git"
+2023-09-07 14:58:49.537 [info] Using git "2.25.1" from "git"
+2023-09-07 14:58:49.538 [info] > git rev-parse --show-toplevel [8ms]
+2023-09-07 14:58:49.538 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.538 [info] > git rev-parse --show-toplevel [15ms]
+2023-09-07 14:58:49.538 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.548 [info] > git rev-parse --show-toplevel [12ms]
+2023-09-07 14:58:49.549 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.680 [info] > git rev-parse --show-toplevel [121ms]
+2023-09-07 14:58:49.681 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.729 [info] > git rev-parse --show-toplevel [26ms]
+2023-09-07 14:58:49.729 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.741 [info] > git rev-parse --show-toplevel [7ms]
+2023-09-07 14:58:49.741 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.751 [info] > git rev-parse --show-toplevel [4ms]
+2023-09-07 14:58:49.751 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.760 [info] > git rev-parse --show-toplevel [6ms]
+2023-09-07 14:58:49.761 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.783 [info] > git rev-parse --show-toplevel [9ms]
+2023-09-07 14:58:49.784 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:58:49.802 [info] > git rev-parse --show-toplevel [6ms]
+2023-09-07 14:58:49.802 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:42.597 [info] > git rev-parse --show-toplevel [4ms]
+2023-09-07 14:59:42.597 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:42.664 [info] > git rev-parse --show-toplevel [4ms]
+2023-09-07 14:59:42.664 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:42.671 [info] > git rev-parse --show-toplevel [2ms]
+2023-09-07 14:59:42.671 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:46.729 [info] > git rev-parse --show-toplevel [3ms]
+2023-09-07 14:59:46.730 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:46.781 [info] > git rev-parse --show-toplevel [4ms]
+2023-09-07 14:59:46.781 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:46.787 [info] > git rev-parse --show-toplevel [2ms]
+2023-09-07 14:59:46.787 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:47.723 [info] > git rev-parse --show-toplevel [3ms]
+2023-09-07 14:59:47.724 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:47.731 [info] > git rev-parse --show-toplevel [3ms]
+2023-09-07 14:59:47.732 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 14:59:47.738 [info] > git rev-parse --show-toplevel [2ms]
+2023-09-07 14:59:47.738 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 15:45:42.632 [info] > git rev-parse --show-toplevel [4ms]
+2023-09-07 15:45:42.632 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 15:45:42.639 [info] > git rev-parse --show-toplevel [3ms]
+2023-09-07 15:45:42.640 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 15:45:42.646 [info] > git rev-parse --show-toplevel [2ms]
+2023-09-07 15:45:42.646 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 16:16:51.731 [info] > git rev-parse --show-toplevel [3ms]
+2023-09-07 16:16:51.732 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 16:17:01.931 [info] > git rev-parse --show-toplevel [3ms]
+2023-09-07 16:17:01.931 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 16:17:01.936 [info] > git rev-parse --show-toplevel [2ms]
+2023-09-07 16:17:01.936 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 16:17:03.846 [info] > git rev-parse --show-toplevel [2ms]
+2023-09-07 16:17:03.846 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 16:17:03.857 [info] > git rev-parse --show-toplevel [8ms]
+2023-09-07 16:17:03.858 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 16:17:03.864 [info] > git rev-parse --show-toplevel [2ms]
+2023-09-07 16:17:03.864 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-09-07 16:17:38.430 [info] > git init [17ms]
+2023-09-07 16:17:38.437 [info] > git rev-parse --show-toplevel [3ms]
+2023-09-07 16:17:38.443 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2023-09-07 16:17:38.467 [info] Open repository: /etc/ansible
+2023-09-07 16:17:38.505 [info] > git fetch [37ms]
+2023-09-07 16:17:38.517 [info] > git config --get commit.template [13ms]
+2023-09-07 16:17:38.522 [info] > git config --get commit.template [7ms]
+2023-09-07 16:17:38.533 [info] No remotes found in the git config file.
+2023-09-07 16:17:38.546 [info] No remotes found in the git config file.
+2023-09-07 16:17:38.547 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2023-09-07 16:17:38.576 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [31ms]
+2023-09-07 16:17:38.583 [info] > git config --get commit.template [8ms]
+2023-09-07 16:17:38.590 [info] No remotes found in the git config file.
+2023-09-07 16:17:38.596 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2023-09-07 16:17:38.672 [info] > git status -z -uall [62ms]
+2023-09-07 16:17:40.541 [info] > git show --textconv :inv/inventory.ini [55ms]
+2023-09-07 16:17:40.544 [info] > git show --textconv :hosts [53ms]
+2023-09-07 16:17:40.545 [info] > git show --textconv :playbook/ping.yml [46ms]
+2023-09-07 16:17:40.545 [info] > git show --textconv :playbook/update-upgrade.yml [37ms]
+2023-09-07 16:17:40.546 [info] > git ls-files --stage -- /etc/ansible/playbook/ping.yml [11ms]
+2023-09-07 16:17:40.547 [info] > git ls-files --stage -- /etc/ansible/hosts [23ms]
+2023-09-07 16:17:40.549 [info] > git ls-files --stage -- /etc/ansible/inv/inventory.ini [34ms]
+2023-09-07 16:17:40.555 [info] > git ls-files --stage -- /etc/ansible/playbook/update-upgrade.yml [17ms]
+2023-09-07 16:17:40.873 [info] > git check-ignore -v -z --stdin [7ms]
+2023-09-07 16:17:41.236 [info] > git ls-files --stage -- /etc/ansible/playbook/ping.yml [6ms]
+2023-09-07 16:17:41.237 [info] > git ls-files --stage -- /etc/ansible/hosts [15ms]
+2023-09-07 16:17:41.242 [info] > git ls-files --stage -- /etc/ansible/inv/inventory.ini [27ms]
+2023-09-07 16:17:41.243 [info] > git ls-files --stage -- /etc/ansible/playbook/update-upgrade.yml [8ms]
+2023-09-07 16:17:41.287 [info] > git show --textconv :playbook/ping.yml [12ms]
+2023-09-07 16:17:41.287 [info] > git show --textconv :hosts [8ms]
+2023-09-07 16:17:41.290 [info] > git show --textconv :inv/inventory.ini [5ms]
+2023-09-07 16:17:41.306 [info] > git show --textconv :playbook/update-upgrade.yml [4ms]

@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Elegant black",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.wordBasedSuggestions": true,
+    "git.autofetch": true,
+    "php.validate.executablePath": "",
+    "remote.SSH.remotePlatform": {
+        "172.16.3.40": "linux",
+        "192.168.132.32": "linux"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "window.zoomLevel": 1
+}

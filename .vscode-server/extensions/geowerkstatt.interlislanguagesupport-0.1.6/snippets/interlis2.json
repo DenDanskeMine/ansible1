@@ -1,0 +1,86 @@
+{
+  "INTERLIS2Def": {
+    "prefix": [
+      "INTERLIS"
+    ],
+    "body": [
+      "INTERLIS ${1|2.3,2.4|};\n${0}"
+    ],
+    "description": "INTERLIS version"
+  },
+  "ModelDef": {
+    "prefix": [
+      "MODEL",
+      "Model",
+      "model"
+    ],
+    "body": [
+      "MODEL ${1:Model-Name}${2| (en) , (de) , (fr) , (it) , (rm) , |}AT \"${4:URL}\" VERSION \"${5:${CURRENT_YEAR}_${CURRENT_MONTH}_${CURRENT_DATE}}\" = ",
+      "\t${0}",
+      "END ${1}."
+    ],
+    "description": "A MODEL block"
+  },
+  "TopicDef": {
+    "prefix": [
+      "TOPIC",
+      "Topic",
+      "topic"
+    ],
+    "body": [
+      "TOPIC ${1:Topic-Name}${2| , (ABSTRACT) , (FINAL)|}= ",
+      "\t${0}",
+      "END ${1};"
+    ],
+    "description": "A TOPIC block"
+  },
+  "ClassDef": {
+    "prefix": [
+      "CLASS",
+      "Class",
+      "class"
+    ],
+    "body": [
+      "CLASS ${1:Class-Name}${2| , (ABSTRACT) , (EXTENDED) , (FINAL) , |}= ",
+      "\t${0}",
+      "END ${1};"
+    ],
+    "description": "A CLASS block"
+  },
+  "StructureDef": {
+    "prefix": [
+      "STRUCTURE",
+      "Structure",
+      "structure"
+    ],
+    "body": [
+      "STRUCTURE ${1:Structure-Name}${2| , (ABSTRACT) , (EXTENDED) , (FINAL) , |}= ",
+      "\t${0}",
+      "END ${1};"
+    ],
+    "description": "A STRUCTURE block"
+  },
+  "AssociationDef": {
+    "prefix": [
+      "ASSOCIATION",
+      "Association",
+      "association"
+    ],
+    "body": [
+      "ASSOCIATION ${1:Association-Name}${2| , (ABSTRACT) , (EXTENDED) , (FINAL) , (OID) |}= ",
+      "\t${0}",
+      "END ${1};"
+    ],
+    "description": "An ASSOCIATION block"
+  },
+  "RoleDef": {
+    "prefix": [
+      "Role",
+      "role"
+    ],
+    "body": [
+      "${1:Role-Name}${2| , (ABSTRACT) , (EXTENDED) , (FINAL) , (HIDING) , (ORDERED) , (EXTERNAL)|}${3|--,-<>,-<#>|} (${4|*,1,1..2,1..*|}) ${0};"
+    ],
+    "description": "Roles inside ASSOCIATION blocks"
+  }
+}

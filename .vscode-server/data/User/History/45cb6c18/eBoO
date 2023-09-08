@@ -1,0 +1,2 @@
+[test]
+172.16.30.3 ansible_user=dkmin ansible_ssh_pass=admin

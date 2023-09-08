@@ -1,0 +1,207 @@
+{
+	"name": "ftp-simple",
+	"displayName": "ftp-simple",
+	"description": "Simple FTP/SFTP",
+	"version": "0.7.6",
+	"publisher": "humy2833",
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"keywords": [
+		"ftp",
+		"sftp",
+		"ftps",
+		"tls",
+		"remote",
+		"download",
+		"upload"
+	],
+	"categories": [
+		"Other"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/humy2833/FTP-Simple.git"
+	},
+	"bugs": {
+		"url": "https://github.com/humy2833/FTP-Simple/issues"
+	},
+	"icon": "logo.png",
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "ftp.config",
+				"title": "ftp-simple : Config - FTP connection setting"
+			},
+			{
+				"command": "ftp.open",
+				"title": "ftp-simple : Open - Open the file directly from FTP server"
+			},
+			{
+				"command": "ftp.save",
+				"title": "ftp-simple : Save - Upload to FTP server"
+			},
+			{
+				"command": "ftp.delete",
+				"title": "ftp-simple : Delete - File or directory in FTP server(recursive)"
+			},
+			{
+				"command": "ftp.mkdir",
+				"title": "ftp-simple : Create directory to FTP server"
+			},
+			{
+				"command": "ftp.diff",
+				"title": "ftp-simple : Diff - Local file and FTP server file"
+			},
+			{
+				"command": "ftp.download",
+				"title": "ftp-simple : Download - Download in working directory from FTP server."
+			},
+			{
+				"command": "ftp.rename",
+				"title": "ftp-simple : Rename - Change the file name from FTP server."
+			},
+			{
+				"command": "ftp.remote.workspace.open",
+				"title": "ftp-simple : Remote directory open to workspace"
+			},
+			{
+				"command": "ftp.reset",
+				"title": "ftp-simple : Close all FTP connections."
+			}
+		],
+		"keybindings": [
+			{
+				"command": "ftp.save",
+				"key": "ctrl+shift+s",
+				"mac": "cmd+shift+s"
+			},
+			{
+				"command": "ftp.open",
+				"key": "ctrl+shift+o",
+				"mac": "cmd+shift+o"
+			},
+			{
+				"command": "ftp.diff",
+				"key": "ctrl+alt+d",
+				"mac": "cmd+alt+d"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "ftp.save",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.download",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.rename",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.diff",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.delete",
+					"group": "ftp-simple"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "ftp.save",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.download",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.rename",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.diff",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.delete",
+					"group": "ftp-simple"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "ftp.save",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.download",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.rename",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.diff",
+					"group": "ftp-simple"
+				},
+				{
+					"command": "ftp.delete",
+					"group": "ftp-simple"
+				}
+			]
+		},
+		"configuration": {
+			"title": "FTP-Simple",
+			"properties": {
+				"ftp-simple.remote-workspace": {
+					"type": "string",
+					"default": "",
+					"description": "You can modify the local workspace path when you open a remote file. Modify this option if remote file encoding is not UTF-8.(VSCode appears to have encoding recognition bugs if the workspace path is longer.)"
+				},
+				"ftp-simple.remote-workspace-load-all": {
+					"type": "boolean",
+					"default": true,
+					"enum": [
+						true,
+						false
+					],
+					"description": "Indicates whether all files are loaded during initial run. If false, the sub folder ([DIR]) will load when it is clicked. Default: true"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"dependencies": {
+		"chokidar": "^3.5.1",
+		"easy-ftp": "^0.4.2",
+		"easy-loop": "^1.7.2",
+		"filesize": "^6.1.0",
+		"fs-extra": "^9.1.0",
+		"minimatch": "^3.0.4"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.37"
+	},
+	"__metadata": {
+		"id": "a1c4713c-cd10-4fbb-9c13-c3adec03b40f",
+		"publisherId": "a81969e8-8b1a-491a-838c-47ac8d73e8df",
+		"publisherDisplayName": "humy2833",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1694094155247,
+		"preRelease": false
+	}
+}

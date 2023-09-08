@@ -1,0 +1,6 @@
+---
+- name: Test Ping on Windows Hosts
+  hosts: windows
+  tasks:
+    - name: Ping Windows Hosts
+      win_ping:

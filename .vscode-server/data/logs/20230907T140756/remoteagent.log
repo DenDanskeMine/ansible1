@@ -1,0 +1,28 @@
+2023-09-07 14:07:56.258 [info] 
+
+
+
+
+2023-09-07 14:07:56.282 [info] Extension host agent started.
+2023-09-07 14:07:56.388 [info] [127.0.0.1][f1295ad0][ManagementConnection] New connection established.
+2023-09-07 14:07:56.436 [info] [127.0.0.1][c2a7e533][ExtensionHostConnection] New connection established.
+2023-09-07 14:07:56.617 [info] [127.0.0.1][c2a7e533][ExtensionHostConnection] <1339> Launched Extension Host Process.
+2023-09-07 14:07:59.629 [error] CodeExpectedError: Could not find pty on pty host
+    at g.P (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:28:7542)
+    at g.updateTitle (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:28:2693)
+    at g.B.<computed> (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:27:22689)
+    at Object.call (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:17:4867)
+    at l.s (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:15:5150)
+    at l.q (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:15:4661)
+    at i.value (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:15:4066)
+    at k.w (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:10:1902)
+    at k.fire (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:10:2119)
+    at process.X (/etc/ansible/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/platform/terminal/node/ptyHostMain.js:8:27134)
+    at process.emit (node:events:513:28)
+    at emit (node:internal/child_process:939:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-09-07 14:12:56.283 [info] New EH opened, aborting shutdown
+2023-09-07 14:58:45.063 [info] [127.0.0.1][8c9eefa4][ManagementConnection] New connection established.
+2023-09-07 14:58:45.143 [info] [127.0.0.1][00a61a86][ExtensionHostConnection] New connection established.
+2023-09-07 14:58:45.152 [info] [127.0.0.1][00a61a86][ExtensionHostConnection] <1876> Launched Extension Host Process.
+2023-09-07 15:03:45.132 [info] [127.0.0.1][c2a7e533][ExtensionHostConnection] <1339> Extension Host Process exited with code: 0, signal: null.

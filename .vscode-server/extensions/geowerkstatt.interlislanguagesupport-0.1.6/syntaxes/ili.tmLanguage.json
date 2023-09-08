@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ili",
+  "scopeName": "source.ili",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constant"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.other.ili",
+          "match": "\\b(NOINCREMENTALTRANSFER|COUNTERCLOCKWISE|ANYSTRUCTURE|AGGREGATION|ASSOCIATION|CARDINALITY|CONSTRAINTS|DERIVATIVES|ENUMTREEVAL|INHERITANCE|RESTRICTION|SUBDIVISION|TRANSLATION|UNQUALIFIED|AGGREGATES|ATTRIBUTES|CONSTRAINT|CONTINUOUS|CONTRACTED|HALIGNMENT|INSPECTION|METAOBJECT|PROJECTION|VALIGNMENT|VERTEXINFO|ACCORDING|ATTRIBUTE|CLOCKWISE|EXISTENCE|MANDATORY|PARAMETER|PERIPHERY|REFERENCE|REFSYSTEM|STRUCTURE|SYMBOLOGY|TRANSIENT|UNDEFINED|ABSTRACT|ANYCLASS|CIRCULAR|CONTINUE|DEFERRED|EXTENDED|EXTERNAL|FUNCTION|GENERICS|INTERLIS|LINEATTR|LINESIZE|OPTIONAL|OVERLAPS|REQUIRED|ROTATION|THATAREA|THISAREA|TRANSFER|CONTEXT|CONTOUR|DEFAULT|DEFINED|DEGREES|DEPENDS|DERIVED|ENUMVAL|EXTENDS|GENERIC|GRAPHIC|IMPORTS|OBJECTS|ORDERED|RADIANS|TIDSIZE|VERSION|WITHOUT|BASKET|DOMAIN|FORMAT|HIDING|LNBASE|OBJECT|OTHERS|PARENT|REFSYS|UNIQUE|VERTEX|BASED|BLANK|CLASS|EQUAL|FINAL|FIRST|GRADS|IDENT|LOCAL|MODEL|MTEXT|TABLE|TOPIC|UNION|WHERE|XMLNS|BASE|CODE|DIM1|DIM2|FONT|FORM|FREE|FROM|JOIN|LAST|LINE|LIST|NAME|NULL|SIGN|THIS|TYPE|UNIT|VIEW|WHEN|WITH|ALL|AND|ANY|BAG|END|FIX|I16|I32|NOT|OID|SET|TID|URI|AS|AT|BY|IN|NO|OF|ON|OR|PI|TO)\\b"
+        },
+        {
+          "name": "keyword.operator.ili",
+          "match": "(--)"
+        },
+        {
+          "name": "keyword.operator.ili",
+          "match": "(;|=|:)"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-dash.ili",
+          "begin": "!!",
+          "end": "\n"
+        },
+        {
+          "name": "comment.block.ili",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.single.ili",
+          "begin": "\"",
+          "end": "\""
+        }
+      ]
+    },
+    "constant": {
+      "patterns": [
+        {
+          "name": "constant.numeric.ili",
+          "match": "\\b(\\+|-)?([1-9]\\d*\\.?|0\\.)\\d*([E|e][+|-]?[1-9]\\d*)?\\b"
+        },
+        {
+          "name": "constant.operator.association.ili",
+          "match": "(\\?<![\\w\\d])--<#>(?![\\w\\d])"
+        },
+        {
+          "name": "constant.operator.composition.ili",
+          "match": "(\\?<![\\w\\d])--<>(?![\\w\\d])"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "support.type.ili",
+          "match": "\\b(ARCS|AREA|BINARY|BLACKBOX|BOOLEAN|COORD|COORD2|COORD3|DATE|DATETIME|DIRECTED|MULTIAREA|MULTICOORD|MULTIPOLYLINE|MULTISURFACE|NUMERIC|POLYLINE|STRAIGHTS|SURFACE|TEXT|TIMEOFDAY|XML)\\b"
+        }
+      ]
+    }
+  }
+}

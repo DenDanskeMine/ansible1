@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [closed]
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+
+    - name: Get current version
+      run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo VERSION_TAG=v$VERSION >> $GITHUB_ENV
+
+    - name: Check if tag exists
+      id: check_tag
+      run: echo PERFORM_PUBLISH=$(git rev-parse --verify -q "refs/tags/${{ env.VERSION_TAG }}" >> /dev/null && echo false || echo true) >> $GITHUB_ENV
+      
+    - name: Install packages
+      if: ${{ env.PERFORM_PUBLISH == 'true' }}
+      run: npm ci
+      
+    - name: Publish extension
+      if: ${{ env.PERFORM_PUBLISH == 'true' }}
+      run: npx vsce publish
+      env: 
+        VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+    - name: Tag current version
+      if: ${{ env.PERFORM_PUBLISH == 'true' }}
+      run: | 
+          git config --local user.email "office@geowerkstatt.ch"
+          git config --local user.name "GeoWerkstatt-Build"
+          git tag ${{ env.VERSION_TAG }}         
+
+    - name: Push version tag
+      if: ${{ env.PERFORM_PUBLISH == 'true' }}
+      uses: ad-m/github-push-action@057a6ba835d986bfe495dd476a6c4db1d5f9503c
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        tags: true

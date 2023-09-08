@@ -1,0 +1,89 @@
+{
+	"name": "InterlisLanguageSupport",
+	"displayName": "INTERLIS 2",
+	"description": "Syntax highlighting for INTERLIS 2.4",
+	"icon": "images/iliIcon.PNG",
+	"publisher": "geowerkstatt",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GeoWerkstatt/vsc_interlis2_extension.git"
+	},
+	"version": "0.1.6",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onLanguage:INTERLIS2"
+	],
+	"main": "./out/setup.js",
+	"browser": "./out/browser.js",
+	"keywords": [
+		"INTERLIS",
+		"ili"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "INTERLIS2",
+				"aliases": [
+					"INTERLIS2",
+					"ili"
+				],
+				"extensions": [
+					".ili"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "INTERLIS2",
+				"scopeName": "source.ili",
+				"path": "./syntaxes/ili.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "INTERLIS2",
+				"path": "./snippets/interlis2.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./",
+		"format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.7",
+		"@types/node-fetch": "^2.6.2",
+		"@types/vscode": "^1.34.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.0",
+		"@typescript-eslint/parser": "^5.30.0",
+		"eslint": "^8.13.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^2.7.1",
+		"typescript": "^4.8.4",
+		"vsce": "^2.11.0"
+	},
+	"dependencies": {
+		"node-fetch": "^2.6.7"
+	},
+	"__metadata": {
+		"id": "9ed1b9dc-e11b-4a8b-8dc6-4f00011f5f39",
+		"publisherId": "59e5fc39-1862-422a-8776-cda683a8dab1",
+		"publisherDisplayName": "GeoWerkstatt GmbH",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1694094452806,
+		"preRelease": false
+	}
+}

@@ -1,0 +1,20 @@
+---
+- name: Update og Upgrade Ubuntu Servere
+  hosts: test  # Replace with the name of your target group from the inventory
+  become: yes  # Run tasks with sudo privileges
+
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+      register: update_result
+
+    - name: Perform system upgrade
+      apt:
+        upgrade: dist
+        autoremove: yes
+      when: update_result.changed
+
+    - name: Reboot the server if upgrades were performed
+      reboot:
+      when: update_result.changed
